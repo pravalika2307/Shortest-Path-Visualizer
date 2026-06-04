@@ -19,3 +19,9 @@ pip install -r requirements.txt
 
 streamlit run app.py
 
+## Complexity
+
+| Algorithm | Time | Space |
+|-----------|---------------|-------|
+| BFS | O(V + E) | O(V) |
+| Dijkstra | O((V+E)logV) | O(V) |
