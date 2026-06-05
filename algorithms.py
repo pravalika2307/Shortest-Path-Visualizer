@@ -69,3 +69,21 @@ def dijkstra(rows, cols, start, end):
                 node = parent[node]
 
             return path[::-1]
+        
+        for neighbor in get_neighbors(node, rows, cols):
+
+            new_cost = cost + 1
+
+            if (
+                neighbor not in distances
+                or
+                new_cost < distances[neighbor]
+            ):
+
+                distances[neighbor] = new_cost
+
+                parent[neighbor] = node
+
+                heapq.heappush(heap,(new_cost,neighbor))
+
+    return []
