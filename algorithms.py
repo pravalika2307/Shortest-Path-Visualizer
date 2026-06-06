@@ -74,16 +74,57 @@ def dijkstra(rows, cols, start, end):
 
             new_cost = cost + 1
 
-            if (
-                neighbor not in distances
-                or
-                new_cost < distances[neighbor]
-            ):
+            if (neighbor not in distances or new_cost < distances[neighbor]):
 
                 distances[neighbor] = new_cost
 
                 parent[neighbor] = node
 
                 heapq.heappush(heap,(new_cost,neighbor))
+
+    return []
+
+def heuristic(a,b):
+
+    return abs(a[0]-b[0]) + abs(a[1]-b[1])
+
+
+def astar(rows, cols, start, end):
+
+    heap = [(0,start)]
+
+    g_score = {start:0}
+
+    parent = {start:None}
+
+    while heap:
+
+        _,node = heapq.heappop(heap)
+
+        if node == end:
+
+            path = []
+
+            while node:
+
+                path.append(node)
+
+                node = parent[node]
+
+            return path[::-1]
+
+        for neighbor in get_neighbors(node, rows, cols):
+
+            tentative = g_score[node] + 1
+
+            if (neighbor not in g_score or tentative < g_score[neighbor]):
+
+                g_score[neighbor] = tentative
+
+                f_score = tentative + heuristic(neighbor,end)
+
+                parent[neighbor] = node
+
+                heapq.heappush(heap,(f_score,neighbor))
 
     return []
