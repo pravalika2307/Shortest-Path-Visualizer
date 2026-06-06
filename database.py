@@ -44,3 +44,9 @@ def save_run(algorithm, start_node, end_node, path_length):
     conn.commit()
 
     conn.close()
+
+def get_history():
+
+    conn = sqlite3.connect(DB_NAME)
+
+    cursor = conn.cursor()
