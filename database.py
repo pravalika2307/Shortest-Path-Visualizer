@@ -50,3 +50,13 @@ def get_history():
     conn = sqlite3.connect(DB_NAME)
 
     cursor = conn.cursor()
+
+    cursor.execute("""SELECT *
+                    FROM runs
+                    ORDER BY created_at DESC""")
+
+    data = cursor.fetchall()
+
+    conn.close()
+
+    return data
