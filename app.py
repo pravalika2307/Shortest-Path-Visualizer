@@ -50,3 +50,23 @@ if st.button("Find Path"):
     st.write(path)
 
     save_run(algorithm, start, end, len(path)-1)
+
+    st.subheader("History")
+
+history = get_history()
+
+if history:
+
+    df = pd.DataFrame(
+        history,
+        columns=[
+            "ID",
+            "Algorithm",
+            "Start",
+            "End",
+            "Length",
+            "Timestamp"
+        ]
+    )
+
+    st.dataframe(df)
