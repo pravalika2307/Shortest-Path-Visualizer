@@ -4,14 +4,14 @@ A grid-based pathfinding tool that visually shows how BFS and Dijkstra explore n
 
 ## Existing Systems This Maps To:
 
-• Google Maps / GPS routing 
-• Game AI (enemy navigation) 
-• Network packet routing
+* Google Maps / GPS routing 
+* Game AI (enemy navigation) 
+* Network packet routing
 
 ## Approach:
 
-• Represent the grid as a 2D list; cells are 0 (open) or 1 (wall).
-• BFS for unweighted grids — all edges cost 1.
-• Dijkstra with heapq for weighted grids.
-• Track parent of each node to reconstruct the path.
-• Print the explored path as ASCII art in the terminal.
+* Represent the grid as a 2D list; cells are 0 (open) or 1 (wall).
+* BFS for unweighted grids — all edges cost 1.
+* Dijkstra with heapq for weighted grids.
+* Track parent of each node to reconstruct the path.
+* Print the explored path as ASCII art in the terminal.
