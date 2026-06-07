@@ -1,4 +1,7 @@
 import streamlit as st
+
+st.set_page_config(page_title="Shortest Path Visualizer", layout="wide")
+
 import pandas as pd
 
 from algorithms import bfs
