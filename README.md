@@ -25,3 +25,25 @@ streamlit run app.py
 |-----------|---------------|-------|
 | BFS | O(V + E) | O(V) |
 | Dijkstra | O((V+E)logV) | O(V) |
+
+## Output
+
+### Home Page
+
+![Home Page](assets/screenshots/home.png)
+
+### BFS Result
+
+![BFS Result](assets/screenshots/bfs-path.png)
+
+### Dijkstra Result
+
+![BFS Result](assets/screenshots/dijkstra-path.png)
+
+### A* Result
+
+![BFS Result](assets/screenshots/astar-path.png)
+
+### History Table
+
+![History](assets/screenshots/search-history.png)
