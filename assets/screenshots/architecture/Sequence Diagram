@@ -1,3 +1,7 @@
+# Purpose
+
+## Shows interaction between components.
+
 User       app.py      algorithms.py      database.py      SQLite
  |             |             |                |             |
  | Find Path   |             |                |             |
