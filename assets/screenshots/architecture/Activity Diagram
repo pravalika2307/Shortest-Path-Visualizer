@@ -1,0 +1,37 @@
+          Start
+             |
+             v
+
+    Enter Grid Details
+             |
+             v
+
+    Select Algorithm
+             |
+             v
+
+      Click Find Path
+             |
+             v
+
+   +------------------+
+   | BFS / Dijkstra / |
+   |      A*          |
+   +------------------+
+             |
+             v
+
+    Generate Path
+             |
+             v
+
+    Save Result
+    To Database
+             |
+             v
+
+    Display Result
+             |
+             v
+
+           End
