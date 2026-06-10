@@ -1,0 +1,37 @@
+# Purpose
+
+## Shows interaction between components.
+
++-------------------+
+|      User         |
++-------------------+
+          |
+          v
+
++-------------------+
+| Streamlit UI      |
+| (app.py)          |
++-------------------+
+          |
+          v
+
++-------------------+
+| Algorithm Engine  |
+| BFS               |
+| Dijkstra          |
+| A*                |
++-------------------+
+          |
+          v
+
++-------------------+
+| Database Layer    |
+| database.py       |
++-------------------+
+          |
+          v
+
++-------------------+
+| SQLite Database   |
+| path_history.db   |
++-------------------+
